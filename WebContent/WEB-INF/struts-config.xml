@@ -16,7 +16,7 @@
     <!-- 请求流程 -->
     <!-- 1.匹配 action-mapping中的path-->
     <!-- 2.找到name属性，如果属性存在则创建对应的form -->
-    <!-- 3.找到scope属性，如果不存在这执行session.setAttribute(name,步骤2中的创建的form) ,否则执行scope.setAttribute(name,步骤2中的创建的form)-->
+    <!-- 3.找到scope属性，如果不存在这执行session.setAttribute(name,步骤2中的创建的form) ,否则执行scope(值).setAttribute(name,步骤2中的创建的form)-->
     <!-- 4.找到type属性，创建一个该类对象（action），执行该对象的execute方法，返回ActionForward对象（String:forward,中的name属性） -->
     <!-- 5.找到forward中步骤4结果对应的path，然后进行页面转发，转发方式按照redirect属性进行 -->
     <action-mappings>
